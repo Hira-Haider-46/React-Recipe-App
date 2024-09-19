@@ -1,0 +1,48 @@
+.home-container {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.home-container h1 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 77px;
+    max-width: 40%;
+    margin: 1.5em auto 0.7em auto;
+    font-family: "Lora", serif;
+}
+
+.home-container .search-wrapper {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    max-width: 43%;
+    position: relative;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.home-container .search-wrapper:focus-within {
+    border-color: #9c702a;
+}
+
+.home-container .search-wrapper .search-icon {
+    font-size: 1.5rem;
+    color: #5c5c5c;
+    margin-left: 0.7em;
+}
+
+.home-container input {
+    padding: 1.2em 1.5em;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #1b2629;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75px;
+    width: 100%;
+}
