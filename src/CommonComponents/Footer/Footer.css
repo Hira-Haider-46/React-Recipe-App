@@ -1,0 +1,89 @@
+footer {
+    background-color: white;
+}
+
+footer section {
+    padding: 1em;
+    border-bottom: 1px solid rgba(27, 38, 41, 0.15);
+}
+
+.email-section {
+    padding: 3.5em 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-section h1 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-family: "Lora", serif;;
+}
+
+.email-section div {
+    width: 40%;
+}
+
+.email-section input {
+    margin-right: 2em;
+    padding: 1.3em 1.5em;
+    outline: none;
+    border-radius: 8px;
+    color: #1b2629;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75px;
+    width: 63%;
+    border: none;
+    background-color: #f9f7f3;
+}
+
+.email-section input:focus {
+    border: 1px solid #9c702a;
+}
+
+.socials-section {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socials-section h2 a{
+    font-family: "Lora", serif;
+    color: #1b2629;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.socials-section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5c5c5c;
+    margin: 1.5em 0;
+    max-width: 55%;
+}
+
+.social-icons {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    margin: 1em 0;
+    color: #9c702a;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.social-icons :hover{
+    color: #b1905b;
+}
+
+.footer-section {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5c5c5c;
+}
