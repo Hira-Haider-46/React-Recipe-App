@@ -4,6 +4,8 @@ import Home from './Pages/Home';
 import Layout from './Components/Layout';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import Recipes from './Pages/Recipes';
+import NotFound from './Pages/NotFound';
 import './App.css';
 
 function App() {
@@ -12,10 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="recipes" element={<h1>recipes</h1>} />
+          <Route path="recipes" element={<Recipes />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<h1>not found</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
