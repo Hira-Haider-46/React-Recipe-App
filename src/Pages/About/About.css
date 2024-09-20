@@ -1,0 +1,23 @@
+.about {
+    text-align: center;
+}
+
+.text {
+    padding: 3em;
+    margin: 5em 0 5.5em 0;
+}
+
+.text img {
+    margin-bottom: 0.6em;
+    width: 35px;
+}
+
+.text h1 {
+    color: #1b2629;
+    font-size: 2.75rem;
+    font-weight: 600;
+    font-family: "Lora", "sans-serif";
+    width: 80%;
+    margin: 1em auto;
+    line-height: 57px;
+}

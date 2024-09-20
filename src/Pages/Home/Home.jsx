@@ -1,7 +1,7 @@
 import React from 'react';
 import { CiSearch } from "react-icons/ci";
-import FeaturedIn from '../../Components/FeaturedIn';
-import AboutSection from '../../Components/AboutSection';
+import FeaturedIn from '../../CommonComponents/FeaturedIn';
+import AboutSection from '../../CommonComponents/AboutSection';
 import RecipesSection from '../../Components/RecipesSection';
 import './Home.css';
 
@@ -14,7 +14,7 @@ function Home() {
         <input type="text" placeholder='Search for a recipe' />
       </div>
       <RecipesSection />
-      <AboutSection />
+      <AboutSection h1Text='Vegan foodie who loves to experiment with recipes' showBtn={true}/>
       <FeaturedIn />
     </section>
   )
