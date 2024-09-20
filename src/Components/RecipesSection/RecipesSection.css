@@ -1,0 +1,14 @@
+.recipes-section {
+    /* border: 2px solid; */
+    padding: 1em 2em;
+    margin: 6em 0 3em 0;
+}
+
+.recipes-section h1 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 3.25rem;
+    font-family: "Lora", serif;
+    text-align: left;
+    margin-bottom: 1em;
+}

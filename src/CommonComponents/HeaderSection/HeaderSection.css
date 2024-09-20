@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+    width: 48%;
+    margin: 3em auto 1em auto;
+    padding: 1em 2em;
+}
+
+.header h1 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 4rem;
+    font-family: "Lora", serif;
+    margin-bottom: 0.4em;
+}
+
+.header p {
+    color: #5c5c5c;
+    line-height: 32px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}

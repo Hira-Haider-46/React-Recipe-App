@@ -1,0 +1,22 @@
+.featured-in {
+    margin: 2em 0 4em 0;
+    padding: 2em 1em;
+}
+
+.featured-in h2{
+    color: #1b2629;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2em 0;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand-logos img{
+    opacity: 0.2;
+    cursor: pointer;
+}

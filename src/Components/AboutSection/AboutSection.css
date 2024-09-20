@@ -1,0 +1,46 @@
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2em;
+    text-align: left;
+    margin: 3em 0;
+}
+
+.text-portion,
+.img-portion {
+    width: 48%;
+}
+
+.text-portion {
+    max-width: 43%;
+    padding: 0 1em;
+}
+
+.about-heading {
+    font-size: 3.25rem;
+    margin: 0.5em 0;
+    color: #1b2629;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+.text-portion p {
+    color: #5c5c5c;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 1em;
+}
+
+.about-section :last-child {
+    margin-top: 1.5em;
+}
+
+.img-portion img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}

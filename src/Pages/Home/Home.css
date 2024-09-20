@@ -1,9 +1,9 @@
 .home-container {
-    padding: 0.5em;
     text-align: center;
+    padding: 0.5em 0;
 }
 
-.home-container h1 {
+.heading {
     color: #1b2629;
     font-weight: 600;
     font-size: 4rem;
