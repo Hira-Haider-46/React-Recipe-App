@@ -1,0 +1,21 @@
+.recipes {
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.recipes h1 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 4rem;
+    font-family: "Lora", serif;
+    margin: 1em 0;
+}
+
+.recipes-container {
+    margin: 2em;
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+}

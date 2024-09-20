@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+}
+
+.recipe-card {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #cccccc;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-part img {
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 1em;
+}
+
+.text-part {
+    border-radius: 40px;
+    margin-bottom: 1em;
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+.text-part h2 {
+    color: #1b2629;
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 39px;
+    font-family: "Lora", serif;
+    margin-bottom: 2em;
+}
+
+.badge-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
