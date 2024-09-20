@@ -3,29 +3,29 @@ import CardBadge from '../CardBadge';
 import { Link } from 'react-router-dom';
 import './RecipeCard.css';
 
-function RecipeCard() {
+function RecipeCard({ strMeal, strCategory, strArea, strMealThumb, id }) {
     return (
-        <Link to=''>
+        <Link to={`/recipe/${id}`}>
             <div className='recipe-card'>
                 <div className='img-part'>
-                    <img src="https://cdn.prod.website-files.com/63a5a105581f4debc72a5ae5/63a855d1a56bae68cf7c1211_Air%20Fryer%20Steak%20Fries-p-500.webp" alt="food-img" />
+                    <img src={strMealThumb} alt={strMeal} />
                 </div>
                 <div className='text-part'>
-                    <h2>Air fryer stake fries</h2>
+                    <h2>{strMeal}</h2>
                     <div className='badge-container'>
                         <CardBadge
                             style={{
                                 backgroundColor: '#feefc9',
                                 color: '#d16400'
                             }}
-                            text='Japenese'
+                            text={strArea}
                         />
                         <CardBadge
                             style={{
                                 backgroundColor: '#e8f5fa',
                                 color: '#397a9e'
                             }}
-                            text='SeaFood'
+                            text={strCategory}
                         />
                     </div>
                 </div>

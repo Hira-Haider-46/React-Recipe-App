@@ -6,7 +6,7 @@ a {
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 98%;
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #cccccc;
@@ -21,6 +21,7 @@ a {
     width: 100%;
     border-radius: 40px;
     margin-bottom: 1em;
+    height: 47vh;
 }
 
 .text-part {
