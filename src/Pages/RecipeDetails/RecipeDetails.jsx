@@ -38,10 +38,10 @@ export default function RecipeDetails() {
             strCategory={recipe.strCategory}
             strArea={recipe.strArea}
           />
-          {/* <div className='img'>
+          <div className='img'>
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
           </div>
-          <RecipeDetailsIngredients recipe={recipe}/>
+          {/* <RecipeDetailsIngredients recipe={recipe}/>
           <div className='directions'>
             <h2>Directions</h2>
             <p>{recipe.strInstructions}</p>
