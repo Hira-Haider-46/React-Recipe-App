@@ -1,22 +1,47 @@
 .header-text {
-    border: 2px solid blue;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .text-area {
     padding: 1em;
-    width: 50%;
-    border: 2px solid;
+    width: 48%;
 }
+
 .text-area h1 {
     color: #1b2629;
     font-weight: 600;
     font-size: 4rem;
     font-family: "Lora", serif;
     margin-bottom: 0.5em;
+}
+
+.text-area p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #5c5c5c;
+    line-height: 32px;
+    margin-bottom: 1em;
+}
+
+.text-area span strong {
+    color: #1b2629;
+    font-family: "Lora", serif;
+    font-weight: 900;
+}
+
+.text-area span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #5c5c5c;
+    margin: 2em;
+}
+
+.header-text a {
+    margin-top: 1em;
 }
