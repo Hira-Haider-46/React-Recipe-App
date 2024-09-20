@@ -3,9 +3,9 @@ import CardBadge from '../CardBadge';
 import { Link } from 'react-router-dom';
 import './RecipeCard.css';
 
-function RecipeCard({ strMeal, strCategory, strArea, strMealThumb, id }) {
+export default function RecipeCard({ strMeal, strCategory, strArea, strMealThumb }) {
     return (
-        <Link to={`/recipe/${id}`}>
+        <Link to={`/recipes/${strMeal}`}>
             <div className='recipe-card'>
                 <div className='img-part'>
                     <img src={strMealThumb} alt={strMeal} />
@@ -33,5 +33,3 @@ function RecipeCard({ strMeal, strCategory, strArea, strMealThumb, id }) {
         </Link>
     )
 }
-
-export default RecipeCard;

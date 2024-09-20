@@ -1,11 +1,12 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Pages/Home';
+import RecipeDetails from './Pages/RecipeDetails';
 import Layout from './Components/Layout';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Recipes from './Pages/Recipes';
 import NotFound from './Pages/NotFound';
+import Contact from './Pages/Contact';
+import Recipes from './Pages/Recipes';
+import About from './Pages/About';
+import Home from './Pages/Home';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="recipes" element={<Recipes />} />
+          <Route path="recipes/:recipeName" element={<RecipeDetails />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
