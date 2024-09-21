@@ -32,14 +32,18 @@ export default function RecipeDetails() {
     <div className='recipe-details'>
       {isLoading ? <h2 className='no-recipe'>Loading...</h2> :
         <>
-          <RecipeDetailsHeader
-            strMeal={recipe.strMeal}
-            strYoutube={recipe.strYoutube}
-            strCategory={recipe.strCategory}
-            strArea={recipe.strArea}
-          />
-          <div className='img'>
-            <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+          <div className='recipe-details-header'>
+            <div className='recipe-detail'>
+              <RecipeDetailsHeader
+                strMeal={recipe.strMeal}
+                strYoutube={recipe.strYoutube}
+                strCategory={recipe.strCategory}
+                strArea={recipe.strArea}
+              />
+            </div>
+            <div className='img'>
+              <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+            </div>
           </div>
           <div className='container'>
             <RecipeDetailsIngredients recipe={recipe} />

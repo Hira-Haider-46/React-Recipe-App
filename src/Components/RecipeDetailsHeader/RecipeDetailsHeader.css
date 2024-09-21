@@ -3,14 +3,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    text-align: left;
     padding-bottom: 1em;
+    padding-left: 3em;
 }
 
 .text-area {
     padding: 1em;
-    width: 48%;
+    width: 90%;
 }
 
 .text-area h1 {
@@ -39,9 +39,10 @@
     font-size: 1.1rem;
     font-weight: 400;
     color: #5c5c5c;
-    margin: 2em;
+    margin-right: 2em;
 }
 
 .header-text a {
     margin-top: 1em;
+    padding-left: 1em;
 }
