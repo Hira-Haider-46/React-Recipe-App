@@ -41,11 +41,13 @@ export default function RecipeDetails() {
           <div className='img'>
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
           </div>
-          {/* <RecipeDetailsIngredients recipe={recipe}/>
-          <div className='directions'>
-            <h2>Directions</h2>
-            <p>{recipe.strInstructions}</p>
-          </div> */}
+          <div className='container'>
+            <RecipeDetailsIngredients recipe={recipe} />
+            <div className='directions'>
+              <h2>Directions</h2>
+              <p>{recipe.strInstructions}</p>
+            </div>
+          </div>
         </>
       }
     </div>

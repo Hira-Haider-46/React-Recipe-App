@@ -1,31 +1,12 @@
-import { useEffect, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { useRecipes } from '../../context/RecipeContext';
+import { useState } from 'react';
 import RecipeCard from '../../CommonComponents/RecipeCard';
 import { CiSearch } from "react-icons/ci";
-import { db } from '../../firebase.js';
 import './Recipes.css';
 
 export default function Recipes() {
-  const [recipes, setRecipes] = useState([]);
+  const { recipes, isLoading } = useRecipes();
   const [searchQuery, setSearchQuery] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, 'meals'));
-        const recipesData = querySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
-        console.log(recipesData.id);
-        setRecipes(recipesData);
-      } catch (error) {
-        console.error("Error fetching recipes: ", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchRecipes();
-  }, []);
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.strMeal.toLowerCase().includes(searchQuery.toLowerCase())

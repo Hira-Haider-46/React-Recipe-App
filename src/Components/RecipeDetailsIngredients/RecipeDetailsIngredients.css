@@ -1,0 +1,41 @@
+.ingredients {
+    width: 47%;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.ingredients h2 {
+    color: #1b2629;
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 49px;
+    font-family: "Lora", "sans-serif";
+    margin: 0.7em 0;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2em;
+}
+
+.ingredients ul li {
+    position: relative;
+    padding-left: 1.7em;
+    color: #5c5c5c;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.ingredients ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 10px; 
+    height: 10px;
+    border: 1px solid #9c702a;
+    border-radius: 50%;
+}
