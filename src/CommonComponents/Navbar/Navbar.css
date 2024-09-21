@@ -3,9 +3,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-nav a{
+nav a {
     font-family: "Lora", serif;
     color: #1b2629;
     text-decoration: none;
@@ -20,8 +22,8 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    position: relative; 
-    padding: 0.5em 0; 
+    position: relative;
+    padding: 0.5em 0;
 }
 
 nav ul li a {
@@ -45,4 +47,64 @@ nav ul li::after {
 
 nav ul li:hover::after {
     width: 55%;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #1b2629;
+    margin: 4px 0;
+}
+
+@media (max-width: 1000px) {
+
+    .bg {
+        width: 30%;
+        background-color: white;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.5em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        display: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    nav ul li::after {
+        left: 30%;
+    }
+
+    nav ul li:hover::after {
+        width: 40%;
+    }
+
+    .menu-toggle {
+        display: flex; 
+    }
 }
