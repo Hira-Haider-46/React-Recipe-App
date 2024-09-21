@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebase';
 import './RecipeDetails.css';
+import AOS from 'aos';
 
 export default function RecipeDetails() {
   const { recipeName } = useParams();
@@ -26,6 +27,8 @@ export default function RecipeDetails() {
     };
 
     fetchRecipeByName();
+
+    AOS.init({ duration: 1000, once: false });
   }, [recipeName]);
 
   return (
@@ -33,7 +36,7 @@ export default function RecipeDetails() {
       {isLoading ? <h2 className='no-recipe'>Loading...</h2> :
         <>
           <div className='recipe-details-header'>
-            <div className='recipe-detail'>
+            <div className='recipe-detail' data-aos="fade-up">
               <RecipeDetailsHeader
                 strMeal={recipe.strMeal}
                 strYoutube={recipe.strYoutube}
@@ -41,13 +44,13 @@ export default function RecipeDetails() {
                 strArea={recipe.strArea}
               />
             </div>
-            <div className='img'>
+            <div className='img' data-aos="fade-right">
               <img src={recipe.strMealThumb} alt={recipe.strMeal} />
             </div>
           </div>
           <div className='container'>
-            <RecipeDetailsIngredients recipe={recipe} />
-            <div className='directions'>
+            <RecipeDetailsIngredients recipe={recipe} data-aos="fade-up" />
+            <div className='directions' data-aos="fade-up">
               <h2>Directions</h2>
               <p>{recipe.strInstructions}</p>
             </div>
