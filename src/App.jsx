@@ -10,7 +10,7 @@ import Home from './Pages/Home';
 import React from 'react';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <RecipeProvider>
       <BrowserRouter>
@@ -28,5 +28,3 @@ function App() {
     </RecipeProvider>
   )
 }
-
-export default App;
