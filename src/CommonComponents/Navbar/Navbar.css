@@ -53,6 +53,7 @@ nav ul li:hover::after {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    transition: all 0.9s ease; 
 }
 
 .menu-toggle .bar {
@@ -60,6 +61,26 @@ nav ul li:hover::after {
     width: 25px;
     background-color: #1b2629;
     margin: 4px 0;
+}
+
+.menu-toggle.open .bar {
+    transform: rotate(30deg); 
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0; 
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-30deg); 
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: all 0.9s ease;
 }
 
 @media (max-width: 1000px) {
