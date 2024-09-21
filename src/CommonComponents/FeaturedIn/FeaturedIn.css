@@ -1,9 +1,10 @@
 .featured-in {
     margin: 2em 0 4em 0;
     padding: 2em 1em;
+    text-align: center;
 }
 
-.featured-in h2{
+.featured-in h2 {
     color: #1b2629;
     font-size: 1.2rem;
     font-weight: 500;
@@ -16,9 +17,42 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
-.brand-logos img{
+.brand-logos img {
     opacity: 0.2;
     cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 120px;
+}
+
+.brand-logos img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .brand-logos {
+        justify-content: center;
+    }
+
+    .brand-logos img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logos {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .brand-logos img {
+        width: 90px;
+    }
+
+    .featured-in h2 {
+        font-size: 1rem;
+    }
 }

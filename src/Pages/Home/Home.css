@@ -11,4 +11,21 @@
     max-width: 40%;
     margin: 1.5em auto 0 auto;
     font-family: "Lora", serif;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+        line-height: 60px;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem;
+        line-height: 50px;
+        max-width: 80%;
+    }
 }
