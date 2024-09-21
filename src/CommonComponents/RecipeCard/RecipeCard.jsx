@@ -3,7 +3,7 @@ import CardBadge from '../CardBadge';
 import { Link } from 'react-router-dom';
 import './RecipeCard.css';
 
-export default function RecipeCard({ strMeal, strCategory, strArea, strMealThumb }) {
+export default function RecipeCard({ strMeal, strCategory, strArea, strMealThumb }) { 
     return (
         <Link to={`/recipes/${strMeal}`}>
             <div className='recipe-card'>
