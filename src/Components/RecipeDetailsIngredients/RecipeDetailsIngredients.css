@@ -39,3 +39,29 @@
     border: 1px solid #9c702a;
     border-radius: 50%;
 }
+
+@media (max-width: 850px) {
+    .ingredients {
+        width: 90%;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    .ingredients h2 {
+        font-size: 1.7rem;
+    }
+
+    .ingredients ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingredients h2 {
+        font-size: 1.5rem;
+    }
+
+    .ingredients ul li {
+        line-height: 28px;
+    }
+}

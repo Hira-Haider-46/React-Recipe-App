@@ -4,28 +4,27 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    padding-bottom: 1em;
-    padding-left: 3em;
+    padding: 2em;
 }
 
 .text-area {
     padding: 1em;
-    width: 90%;
+    width: 100%;
 }
 
 .text-area h1 {
     color: #1b2629;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: "Lora", serif;
     margin-bottom: 0.5em;
 }
 
 .text-area p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #5c5c5c;
-    line-height: 32px;
+    line-height: 1.5;
     margin-bottom: 1em;
 }
 
@@ -36,7 +35,7 @@
 }
 
 .text-area span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #5c5c5c;
     margin-right: 2em;
@@ -45,4 +44,43 @@
 .header-text a {
     margin-top: 1em;
     padding-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        padding: 1em;
+    }
+
+    .text-area h1 {
+        font-size: 2rem;
+    }
+
+    .text-area p {
+        font-size: 0.9rem;
+    }
+
+    .text-area span {
+        font-size: 0.9rem;
+        margin-right: 1em;
+    }
+
+    .header-text a {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-area h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-area p {
+        font-size: 0.8rem;
+    }
+
+    .text-area span {
+        font-size: 0.8rem;
+    }
 }
