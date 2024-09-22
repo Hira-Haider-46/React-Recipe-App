@@ -20,8 +20,8 @@ nav ul {
     display: flex;
     flex-direction: row;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1; 
+    visibility: visible;
 }
 
 nav ul.open {
@@ -123,12 +123,19 @@ nav ul li:hover a {
         flex-direction: column;
         width: 30%;
         height: 100%;
-        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
     }
 
     nav ul li:hover::after {
         width: 40%;
         left: 30%;
+    }
+
+    nav ul.open {
+        opacity: 1;
+        visibility: visible;
     }
 
     .menu-toggle {

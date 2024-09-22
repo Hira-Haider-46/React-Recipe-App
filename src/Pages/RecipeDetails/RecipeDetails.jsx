@@ -4,8 +4,8 @@ import { collection, getDocs } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebase';
-import './RecipeDetails.css';
 import AOS from 'aos';
+import './RecipeDetails.css';
 
 export default function RecipeDetails() {
   const { recipeName } = useParams();

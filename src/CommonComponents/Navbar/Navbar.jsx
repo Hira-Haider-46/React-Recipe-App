@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -11,7 +11,7 @@ function Navbar() {
             setIsOpen(true);
             setTimeout(() => {
                 setShowMenu(true);
-            }, 700);
+            }, 700); 
         } else {
             setShowMenu(false);
             setTimeout(() => {
@@ -24,6 +24,18 @@ function Navbar() {
         setShowMenu(false);
         setIsOpen(false);
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 1000) {
+                setIsOpen(false); 
+                setShowMenu(true);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <nav>
