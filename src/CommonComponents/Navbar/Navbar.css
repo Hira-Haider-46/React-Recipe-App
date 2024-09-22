@@ -103,15 +103,15 @@ nav ul li:hover a {
         right: 0;
         width: 100%;
         background-color: white;
-        transform: translateX(100%);
         opacity: 0;
-        transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);
+        transition: clip-path 0.7s ease-in-out, opacity 0.7s ease-in-out;
         height: 100vh;
         z-index: -1;
     }
 
     .bg.open {
-        transform: translateX(0);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         opacity: 1;
     }
 

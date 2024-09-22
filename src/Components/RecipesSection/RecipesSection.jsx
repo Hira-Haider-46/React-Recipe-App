@@ -19,7 +19,7 @@ function RecipesSection() {
 
             <div className='recipes-container'>
                 {isLoading ? (
-                    <h2>Loading...</h2>
+                    <h2 className='no-recipe'>Loading...</h2>
                 ) : (
                     recipes.slice(0, 3).map((recipe) => (
                         <div key={recipe.id} data-aos="fade-up">

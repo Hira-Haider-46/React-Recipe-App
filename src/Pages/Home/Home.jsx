@@ -14,13 +14,13 @@ function Home() {
   return (
     <section className='home-container'>
       <h1 className='heading' data-aos="fade-down">
-        Lorem ipsum sit dolor sit amet consectetur
+        A blog template made for food influencers
       </h1>
       <div data-aos="fade-up">
         <RecipesSection />
       </div>
       <div data-aos="fade-up">
-        <AboutSection h1Text='Vegan foodie who loves to experiment with recipes' showBtn={true}/>
+        <AboutSection h1Text='Vegan foodie who loves to experiment with recipes' showBtn={true} />
       </div>
       <div data-aos="fade-up">
         <FeaturedIn />
