@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import HeaderSection from '../../CommonComponents/HeaderSection';
-import './Contact.css';
 import AOS from 'aos';
+import './Contact.css';
 
 function Contact() {
   useEffect(() => {

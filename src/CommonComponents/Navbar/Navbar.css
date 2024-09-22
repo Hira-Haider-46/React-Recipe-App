@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 nav a {
@@ -18,12 +19,21 @@ nav a {
 nav ul {
     display: flex;
     flex-direction: row;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul.open {
+    opacity: 1;
+    visibility: visible;
 }
 
 nav ul li {
     list-style: none;
     position: relative;
     padding: 0.5em 0;
+    text-align: center;
 }
 
 nav ul li a {
@@ -32,28 +42,34 @@ nav ul li a {
     font-weight: 500;
     margin: 0 2.5em;
     font-family: "Inter", sans-serif;
+    transition: color 0.3s ease;
 }
 
 nav ul li::after {
     content: '';
     position: absolute;
-    left: 31px;
+    left: 50%;
     bottom: 0;
     width: 0;
     height: 2px;
     background: #9c702a;
-    transition: width 0.3s ease;
+    transition: width 0.4s ease, left 0.4s ease;
 }
 
 nav ul li:hover::after {
-    width: 55%;
+    width: 100%;
+    left: 0;
+}
+
+nav ul li:hover a {
+    color: #1b2629;
 }
 
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    transition: all 0.9s ease; 
+    transition: all 0.3s ease;
 }
 
 .menu-toggle .bar {
@@ -61,39 +77,42 @@ nav ul li:hover::after {
     width: 25px;
     background-color: #1b2629;
     margin: 4px 0;
+    transition: transform 0.8s ease, opacity 0.6s ease;
 }
 
-.menu-toggle.open .bar {
-    transform: rotate(30deg); 
+.menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
-    opacity: 0; 
+    opacity: 0;
 }
 
 .menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-30deg); 
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px;
-    transition: all 0.9s ease;
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .bg {
-        width: 30%;
-        background-color: white;
-        align-items: end;
         position: absolute;
         top: 0;
         right: 0;
-        padding: 1.5em;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        background-color: white;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .bg.open {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     nav ul {
@@ -104,29 +123,16 @@ nav ul li:hover::after {
         flex-direction: column;
         width: 30%;
         height: 100%;
-        display: none;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        padding: 1em 0;
-        text-align: center;
-    }
-
-    nav ul li::after {
-        left: 30%;
+        z-index: 1;
     }
 
     nav ul li:hover::after {
         width: 40%;
+        left: 30%;
     }
 
     .menu-toggle {
-        display: flex; 
+        display: flex;
     }
 }
 

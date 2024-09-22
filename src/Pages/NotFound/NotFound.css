@@ -20,3 +20,45 @@
     line-height: 32px;
     margin: 1.5em 0;
 }
+
+@media (max-width: 1000px) {
+    .not-found {
+        width: 70%;
+    }
+
+    .not-found h1 {
+        font-size: 2.5rem;
+    }
+
+    .not-found p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .not-found {
+        width: 85%;
+    }
+
+    .not-found h1 {
+        font-size: 2.25rem;
+    }
+
+    .not-found p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .not-found {
+        width: 95%;
+    }
+
+    .not-found h1 {
+        font-size: 2rem;
+    }
+
+    .not-found p {
+        font-size: 0.9rem;
+    }
+}

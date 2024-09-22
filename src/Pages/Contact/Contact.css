@@ -3,3 +3,24 @@
     width: 17%;
     margin: 0 auto 2em auto;
 }
+
+@media (max-width: 1000px) {
+    .icons {
+        width: 30%;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        width: 40%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        width: 60%;
+        font-size: 1.25rem;
+    }
+}
