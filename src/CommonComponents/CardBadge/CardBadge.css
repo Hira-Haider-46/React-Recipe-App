@@ -11,24 +11,38 @@
 
 @media (max-width: 1000px) {
     .badge {
-        padding: 0.5em 1em; 
-        font-size: 0.6rem;   
+        padding: 0.7em 1.5em;
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .badge {
         letter-spacing: 1px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .badge {
-        padding: 0.4em 0.65em;
-        font-size: 0.5rem;
+        padding: 0.5em 0.8em;
+        font-size: 0.6rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .badge {
-        padding: 0.6em 1em;
+        padding: 1em 1.5em;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+}
+@media (max-width: 400px) {
+    .badge {
+        padding: 0.7em 0.9em;
+        font-weight: 500;
         font-size: 0.7rem;
-        letter-spacing: 1.5px;
-        margin: 0.8em 0;
+        letter-spacing: 0.5px;
     }
 }

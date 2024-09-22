@@ -61,20 +61,36 @@
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    .recipes-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 3em;
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 550px) {
+    .recipes-container {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        margin-left: 2em;
+    }
+}
+
 @media (max-width: 480px) {
     .recipes h1 {
         font-size: 2rem;
     }
-
+    
     .search-wrapper {
-        max-width: 90%;
+        max-width: 95%;
     }
-
+    
     .recipes-container {
         grid-template-columns: 1fr;
         gap: 1em;
     }
-
+    
     .search-wrapper .search-icon {
         font-size: 1.25rem;
     }
@@ -85,5 +101,12 @@
 
     .no-recipe {
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipes-container {
+        padding-left: 0;
+        margin-left: 1em;
     }
 }
