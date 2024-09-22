@@ -142,23 +142,3 @@ nav ul li:hover a {
         display: flex;
     }
 }
-
-@media (max-width: 700px) {
-    .bg {
-        width: 40%;
-    }
-
-    nav ul {
-        width: 40%;
-    }
-}
-
-@media (max-width: 480px) {
-    .bg {
-        width: 50%;
-    }
-
-    nav ul {
-        width: 50%;
-    }
-}
