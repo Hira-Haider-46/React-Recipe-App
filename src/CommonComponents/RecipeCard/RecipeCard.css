@@ -58,7 +58,7 @@ a {
     }
 
     .img-part img {
-        height: 65vh; 
+        height: 500px;
     }
 
     .text-part h2 {
@@ -78,7 +78,7 @@ a {
     }
 
     .img-part img {
-        height: 47vh;
+        height: 400px; 
         border-radius: 20px;
     }
 
@@ -102,7 +102,7 @@ a {
     }
 
     .img-part img {
-        height: 40vh;
+        height: 350px; 
     }
 }
 
@@ -112,7 +112,7 @@ a {
     }
 
     .img-part img {
-        height: 45vh;
+        height: 300px;
     }
 }
 
@@ -122,7 +122,7 @@ a {
     }
 
     .img-part img {
-        height: 40vh;
+        height: 270px; 
     }
 }
 
@@ -132,6 +132,6 @@ a {
     }
 
     .img-part img {
-        height: 30vh;
+        height: 250px; 
     }
 }
