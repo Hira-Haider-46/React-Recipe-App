@@ -11,7 +11,7 @@ function Navbar() {
             setIsOpen(true);
             setTimeout(() => {
                 setShowMenu(true);
-            }, 700); 
+            }, 300); 
         } else {
             setShowMenu(false);
             setTimeout(() => {
