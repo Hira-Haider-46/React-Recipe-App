@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
 
     const toggleMenu = () => {
         if (!isOpen) {
