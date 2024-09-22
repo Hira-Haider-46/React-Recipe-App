@@ -78,6 +78,9 @@ To create a production build of the app, run:
 If you are using npm:
 ```bash
 npm run build
+```
 
 Or by using yarn:
+```bash
 yarn build
+```
